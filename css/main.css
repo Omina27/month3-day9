@@ -2,6 +2,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #123bac;
+    color: #f1f1f1;
+    transition: all 1s ease-in
 }
 
 .container {
@@ -11,6 +13,44 @@ body {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.dark {
+    background-color: #123bac;
+    color: #f1f1f1;
+    transition: all 1s ease-in;
+}
+
+.sun {
+    background-color: #fff;
+    color:#123bac;
+    transition:all 1s ease-in
+}
+
+
+.toggle {
+    width: 100px;
+    display: flex;
+    border-radius: 150px;
+    border: 1px solid #333;
+    background-color:#f1f1f1;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.toggle--on > .toggle__child {
+    margin-left: 46px;
+    background-color: #5595d6;
+}
+
+.toggle__child {
+    transition: margin-left 0.5s ease-in-out;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #5595d6;
 }
 
 .form {
@@ -27,14 +67,14 @@ body {
     font-size: 45px;
     margin-bottom: 15px;
     text-align: center;
-    color: #f1f1f1;
+ 
 }
 
 .input {
     padding: 15px;
     width: 260px;
     border-radius: 10px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #123bac;
     text-align: center;
     font-weight: 400;
     font-size: 17px;
@@ -57,7 +97,7 @@ body {
     width: 248px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #123bac;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;

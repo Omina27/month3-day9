@@ -2,7 +2,6 @@ var num = document.getElementById("amount")
 var javob = document.getElementById("result")
 
 
-
 form.addEventListener('submit', function(e) {
   e.preventDefault()
   
@@ -25,9 +24,17 @@ function natija (num) {
   }
 }
 
+var toggle = document.querySelector('.toggle')
+var toggleOn = document.querySelector('.toggle--on')
+var dark =document.querySelector('.dark')
+var sun = document.querySelector('.sun')
 
+toggle.addEventListener('click', function (event){
+  toggleOn.classList.toggle ('toggle--on');
+  document.body.classList.toggle ('dark');
+  document.body.classList.toggle ('sun');
 
-
+})
 
 
 
